@@ -1,0 +1,189 @@
+{
+  "results": [
+    {
+      "data": {
+        "header-group": [
+          {
+            "icon": {
+              "url": "http://jwsupport.cdn.prismic.io/jwsupport%2F9cdec739-9d30-40b1-97c4-264ad2fbf464_jw-platform-icon.svg"
+            },
+            "title": [
+              {
+                "type": "paragraph",
+                "text": "JW Publish"
+              }
+            ]
+          }
+        ],
+        "subhead": [
+          {
+            "type": "paragraph",
+            "text": "Intuitive Video Management & Delivery at Scale"
+          }
+        ],
+        "button": {
+          "url": "https://www.jwplayer.com",
+          "text": "Get Started"
+        },
+        "hero-image": {
+          "url": "http://jwsupport.cdn.prismic.io/jwsupport/c1022f973247d4f7c6e174f2146929a459b7d1eb_hero-image.png"
+        },
+        "body": [
+          {
+            "slice_type": "features",
+            "items": [
+              {
+                "feature_title": [
+                  {
+                    "type": "heading3",
+                    "text": "Similar Playlist"
+                  }
+                ],
+                "feature_description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Increase viewer retention and engagement based onviewer behavior& video metadata."
+                  }
+                ],
+                "list_header": [
+                  {
+                    "type": "heading4",
+                    "text": "Best for:"
+                  }
+                ],
+                "list": [
+                  {
+                    "type": "list-item",
+                    "text": "Video Detail Pages"
+                  },
+                  {
+                    "type": "list-item",
+                    "text": "Verticals / Channels"
+                  }
+                ],
+                "button": {
+                  "url": "https://www.jwplayer.com",
+                  "text": "Learn More"
+                }
+              },
+              {
+                "feature_title": [
+                  {
+                    "type": "heading3",
+                    "text": "Search"
+                    }
+                ],
+                "feature_description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Allow users to find specific content within your site’s video experience with anend-to-end solutionfor video search."
+                  }
+                ],
+                "list_header": [
+                  {
+                    "type": "heading4",
+                    "text": "Best for:"
+                  }
+                ],
+                "list": [
+                  {
+                    "type": "list-item",
+                    "text": "Video Apps"
+                  },
+                  {
+                    "type": "list-item",
+                    "text": "Immersive Video Experiences"
+                  }
+                ],
+                "button": {
+                  "url": "https://www.jwplayer.com",
+                  "text": "Learn More"
+                }
+              },
+              {
+              "feature_title": [
+                {
+                  "type": "heading3",
+                  "text": "Trending Playlist"
+                }
+              ],
+              "feature_description": [
+                {
+                  "type": "paragraph",
+                  "text": "Automatically surface trending content to engage new users based onreal-timetrends of what everyone is watching."
+                  }
+              ],
+              "list_header": [
+                {
+                  "type": "heading4",
+                  "text": "Best for:"
+                }
+              ],
+              "list": [
+                {
+                  "type": "paragraph",
+                  "text": "Homepages"
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Popular Content Pairing "
+                }
+              ],
+              "button": {
+                  "url": "https://www.jwplayer.com",
+                  "text": "Learn More"
+              }
+          }
+        ],
+        "primary": {
+          "features_header": [
+            {
+              "type": "heading4",
+              "text": "Engage and retain viewers with three types of recommended playlists."
+            }
+          ]
+        }
+      },
+      {
+        "slice_type": "image-left",
+        "primary": {
+          "image": {
+            "url": "http://jwsupport.cdn.prismic.io/jwsupport%2Ffca5e317-7fe5-4818-a800-69d2775ae434_monetization.svg"
+          },
+          "section_header": [
+            {
+              "type": "heading3",
+              "text": "45% Average Play Lift"
+            }
+          ],
+          "section_text": [
+            {
+              "type": "paragraph",
+              "text": "Across our network of 200+ publishers using JW Recommendations, we see an average lift of 45% in video plays, with some publishers experiencing 100% growth or more based on their specific content type and implementation. We make it easy to verify the performance of recommended playlists with Analytics Segmentation."
+            }
+          ]
+        }
+      },
+      {
+        "slice_type": "image_right",
+        "primary": {
+          "image": {
+            "url": "http://jwsupport.cdn.prismic.io/jwsupport%2F9a74928c-0fd8-418c-be90-fef3618b92a0_developer-tools.svg"
+          },
+          "section_header": [
+            {
+              "type": "heading3",
+              "text": "Robust Developer APIs"
+            }
+          ],
+          "section_text": [
+            {
+              "type": "paragraph",
+              "text": "Use JW Platform’s flexible APIs to access Recommendations programmatically and leverage recommended content in mobile, web, and OTT apps. Drive viewer engagement with page widgets that viewers can see and interact with while watching video. Plus, get the same measurable viewer engagement and overall impressions via built-in Analytics Segmentation."
+            }
+          ]
+        }
+      }]
+    }
+  }]
+}

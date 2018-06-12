@@ -18,12 +18,12 @@ const HeaderGroup = props => {
   const renderSubHeading = (items, key) => (
     <SubHeading text={items.text} key={key} className="Landing-subhead" />
   );
-  const imgAndTitleHeading = headerGroup.map(renderTitleHeading);
+  const iconAndTitleHeading = headerGroup.map(renderTitleHeading);
   const subheading = subhead.map(renderSubHeading);
 
   return (
     <div className="align-self-center align-content-center mt-5 text-center">
-      {imgAndTitleHeading}
+      {iconAndTitleHeading}
       {subheading}
       <div className="mt-4 mb-4">
         <Button text={button.text} url={button.url} />

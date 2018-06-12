@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import data from "../../data/data.json";
 import Features from "../../components/features/Features";
 
@@ -23,7 +23,14 @@ export default class FeaturesContainer extends Component {
   componentDidMount() {
     this.fetchData();
   }
+  renderFeatures = (item, key) => (
+    <Features key={key} features={this.state.content.features} title={item} />
+  );
+
   render() {
-    return this.state.dataFetched && <Features content={this.state.content} />;
+    const features =
+      this.state.dataFetched &&
+      this.state.content.title.map(this.renderFeatures);
+    return <Fragment>{features}</Fragment>;
   }
 }

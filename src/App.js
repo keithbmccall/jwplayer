@@ -1,20 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component } from "react";
+import Layout from "./hoc/layout/Layout";
+import NavbarContainer from "./containers/navbar/NavbarContainer";
+import LandingContainer from "./containers/landing/LandingContainer";
+import FeaturesContainer from "./containers/features/FeaturesContainer";
+import ChartsContainer from "./containers/charts/ChartsContainer";
 
 class App extends Component {
   render() {
+    //layout wrapper for scalability, with regards to a potential addition of a react router or redux or something else added later
+  
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Layout>
+        <NavbarContainer />
+        <LandingContainer />
+        <FeaturesContainer />
+        <ChartsContainer />
+      </Layout>
     );
   }
+  
 }
+
 
 export default App;

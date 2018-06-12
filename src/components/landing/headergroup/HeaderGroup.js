@@ -11,7 +11,7 @@ const HeaderGroup = props => {
       <img
         src={items.icon.url}
         alt="JWPUBLISH"
-        className="mh-100 img-fluid Landing-header-image"
+        className="mh-100 img-fluid Header-icon"
       />
       <TitleHeading text={items.title[0].text} />
     </div>

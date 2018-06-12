@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,IAAK;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,UAAU;;ACHzB,kBAAmB;EACjB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,KAAK;;AAEhB,YAAa;EACX,MAAM,EAAE,GAAG",
-"sources": ["../scss/_App.scss","../scss/_Landing.scss"],
+"mappings": "AAAA,IAAK;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,UAAU;;ACHzB,EAAG;EACD,SAAS,EAAE,GAAG;;AAEhB,EAAG;EACD,SAAS,EAAE,GAAG;;ACJhB,kBAAmB;EACjB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,KAAK;;AAEhB,YAAa;EACX,MAAM,EAAE,GAAG",
+"sources": ["../scss/_App.scss","../scss/_Headings.scss","../scss/_Landing.scss"],
 "names": [],
 "file": "index.css"
 }

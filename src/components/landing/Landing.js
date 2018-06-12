@@ -5,7 +5,7 @@ import HeroImage from "../tools/images/HeroImage";
 const Landing = props => {
   const { headerGroup, button, subhead, heroImage } = props.content;
   return (
-    <div className="container-fluid flex-column d-flex" id="Landing-container">
+    <div className="container-fluid" id="Landing-container">
       <div className="row">
         <div className="col-md-12">
           <HeaderGroup

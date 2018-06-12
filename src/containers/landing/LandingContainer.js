@@ -1,8 +1,6 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import data from "../../data/data.json";
 //
-import HeroImage from "../../components/tools/images/HeroImage";
-import HeaderGroup from "../../components/landing/headergroup/HeaderGroup";
 import Landing from "../../components/landing/Landing";
 //
 export default class LandingContainer extends Component {

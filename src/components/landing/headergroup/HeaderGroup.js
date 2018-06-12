@@ -1,8 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import TitleHeading from "../../tools/headings/TitleHeading";
-import SubHeading from "../../tools/headings/SubHeading";
 import Button from "../../tools/buttons/Button";
-import HeroImage from "../../tools/images/HeroImage";
+import SubHeading from "../../tools/headings/SubHeading";
 
 const HeaderGroup = props => {
   const { button, subhead, headerGroup } = props;
@@ -17,7 +16,7 @@ const HeaderGroup = props => {
     </div>
   );
   const renderSubHeading = (items, key) => (
-    <SubHeading text={items.text} key={key} />
+    <SubHeading text={items.text} key={key} className="Landing-subhead" />
   );
   const imgAndTitleHeading = headerGroup.map(renderTitleHeading);
   const subheading = subhead.map(renderSubHeading);

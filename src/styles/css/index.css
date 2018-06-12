@@ -7,8 +7,12 @@ h1 {
   font-size: 2em;
   margin: 0; }
 
-h5 {
+.Subhead {
   font-size: 1.1em;
+  margin: 0; }
+
+h4 {
+  font-size: 1.12em;
   margin: 0; }
 
 #Landing-container {
@@ -18,5 +22,9 @@ h5 {
 .Header-icon {
   height: 1.8em;
   margin: 0 1%; }
+
+#Features-container {
+  background: #465371;
+  padding: 0 10%; }
 
 /*# sourceMappingURL=index.css.map */

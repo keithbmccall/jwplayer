@@ -7,11 +7,11 @@ import HeroImage from "../../tools/images/HeroImage";
 const HeaderGroup = props => {
   const { button, subhead, headerGroup } = props;
   const renderTitleHeading = (items, key) => (
-    <div key={key} className="d-flex flex-row justify-content-center">
+    <div key={key} className="d-flex flex-row justify-content-center mb-2">
       <img
         src={items.icon.url}
         alt="JWPUBLISH"
-        className="mh-100 img-fluid Header-icon"
+        className="mh-100 img-fluid Header-icon align-self-center"
       />
       <TitleHeading text={items.title[0].text} />
     </div>

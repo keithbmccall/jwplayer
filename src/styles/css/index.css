@@ -4,16 +4,19 @@ body {
   font-family: sans-serif; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 2em;
+  margin: 0; }
 
 h5 {
-  font-size: 1em; }
+  font-size: 1.1em;
+  margin: 0; }
 
 #Landing-container {
   background: #ddd;
   padding: 0 10%; }
 
 .Header-icon {
-  height: 2em; }
+  height: 1.8em;
+  margin: 0 1%; }
 
 /*# sourceMappingURL=index.css.map */

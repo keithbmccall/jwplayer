@@ -1,8 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: white;
 }
 .Button {
-  font-size: .65em;
+  font-size: 0.65em;
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:visited {
+      color: inherit;
+    }
+  }
+}
+.Red-bg {
+  background: $red;
+}
+.Light-text-grey {
+  color: $lightgrey;
+}
+
+.Navy-text {
+  color: $navy;
+}
+.Spacer-20{
+  height: 20%;
 }

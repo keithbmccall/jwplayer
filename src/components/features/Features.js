@@ -1,15 +1,11 @@
 import React from "react";
 import SectionHeading from "../tools/headings/SectionHeading";
 import Horizontal from "../tools/holders/Horizontal";
-import Vertical from "../tools/holders/Vertical";
 import FeaturesList from "./featureslist/FeaturesList";
 
 const Features = props => {
-  console.log(props.content);
   const renderFeatures = (item, key) => (
-    <Vertical className="col-md-4" key={key}>
-      <FeaturesList />
-    </Vertical>
+    <FeaturesList features={item} key={key} />
   );
   const { features, title } = props;
   const content = features.map(renderFeatures);
@@ -18,9 +14,9 @@ const Features = props => {
       className="container-fluid justify-content-center d-flex"
       id="Features-container"
     >
-      <div className="flex-column text-center" style={{ background: "red" }}>
+      <div className="flex-column text-center mt-5 mb-5">
         <SectionHeading text={title.text} />
-        <Horizontal>{content}</Horizontal>
+        <Horizontal className="mt-5">{content}</Horizontal>
       </div>
     </div>
   );

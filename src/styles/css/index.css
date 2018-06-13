@@ -1,22 +1,52 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: white; }
 
 .Button {
-  font-size: .65em; }
+  font-size: 0.65em; }
+  .Button a {
+    text-decoration: none;
+    color: inherit; }
+    .Button a:visited {
+      color: inherit; }
 
-h1 {
-  font-size: 2em;
-  margin: 0; }
+.Red-bg {
+  background: #ff0040; }
 
-.Subhead {
+.Light-text-grey {
+  color: #a5afc3; }
+
+.Navy-text {
+  color: #465371; }
+
+.Spacer-20 {
+  height: 20%; }
+
+.Title-heading {
+  font-size: 2.1em;
+  margin: 0;
+  font-weight: 600; }
+
+.Sub-heading {
   font-size: 1.1em;
   margin: 0; }
 
-h4 {
+.Section-heading {
   font-size: 1.12em;
   margin: 0; }
+
+.Small-heading {
+  font-size: 0.8em; }
+
+.D-p {
+  font-size: 0.7em;
+  letter-spacing: .03em; }
+
+.D-l {
+  font-size: 0.6em;
+  list-style: none; }
 
 #Landing-container {
   background: #ddd;

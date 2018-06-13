@@ -10,9 +10,9 @@ const HeaderGroup = props => {
       <img
         src={items.icon.url}
         alt="JWPUBLISH"
-        className="mh-100 img-fluid Header-icon align-self-center"
+        className="img-fluid Header-icon align-self-center mr-2 ml-2"
       />
-      <TitleHeading text={items.title[0].text} />
+      <TitleHeading text={items.title[0].text.toUpperCase()} />
     </div>
   );
   const renderSubHeading = (items, key) => (
@@ -25,9 +25,8 @@ const HeaderGroup = props => {
     <div className="align-self-center align-content-center mt-5 text-center">
       {iconAndTitleHeading}
       {subheading}
-      <div className="mt-4 mb-4">
-        <Button text={button.text} url={button.url} />
-      </div>
+
+      <Button text={button.text} url={button.url} className="mt-4 mb-4 text-dark" />
     </div>
   );
 };

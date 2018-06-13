@@ -17,9 +17,9 @@ const GraphAdjacentParagraph = props => {
         />
       </div>
       <Vertical className="col-lg-8">
-        <div className="mt-5 mb-5">
-          <SmallHeading text={heading} />
-          <DescriptiveParagraph text={text} />
+        <div className="mt-5 mb-5 ml-3 mr-3">
+          <SmallHeading text={heading.toUpperCase()} />
+          <DescriptiveParagraph text={text} className="mt-4" />
         </div>
       </Vertical>
     </Horizontal>

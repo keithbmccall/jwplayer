@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import data from "../../data/data.json";
+import Charts from '../../components/charts/Charts'
 //
 export default class ChartsContainer extends Component {
   constructor() {
@@ -23,6 +24,6 @@ export default class ChartsContainer extends Component {
     this.fetchData();
   }
   render() {
-    return <div>charts</div>;
+    return this.state.dataFetched && <Charts content={this.state.content} />;
   }
 }

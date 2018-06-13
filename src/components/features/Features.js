@@ -16,7 +16,7 @@ const Features = props => {
     >
       <div className="flex-column text-center mt-5 mb-5">
         <SectionHeading text={title.text} />
-        <Horizontal >{content}</Horizontal>
+        <Horizontal>{content}</Horizontal>
       </div>
     </div>
   );

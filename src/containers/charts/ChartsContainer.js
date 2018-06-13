@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import data from "../../data/data.json";
-import Charts from '../../components/charts/Charts'
+import Charts from "../../components/charts/Charts";
 //
 export default class ChartsContainer extends Component {
   constructor() {

@@ -21,7 +21,7 @@ body {
 .Navy-text {
   color: #465371; }
 
-.Spacer-20 {
+.Space-even {
   height: 5em; }
 
 .Title-heading {
@@ -65,6 +65,10 @@ body {
   padding: 0 10%; }
 
 #Charts-container {
-  color: #465371; }
+  color: #465371;
+  padding: 0 10%; }
+
+.Graph-img {
+  height: 14em; }
 
 /*# sourceMappingURL=index.css.map */

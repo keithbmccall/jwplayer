@@ -9,8 +9,8 @@ const HeaderGroup = props => {
     <div key={key} className="d-flex flex-row justify-content-center mb-2">
       <img
         src={items.icon.url}
-        alt="JWPUBLISH"
-        className="img-fluid Header-icon align-self-center mr-2 ml-2"
+        alt={items.title[0].text.toUpperCase()}
+        className="img-fluid Header-icon align-self-center"
       />
       <TitleHeading text={items.title[0].text.toUpperCase()} />
     </div>

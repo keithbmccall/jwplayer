@@ -20,7 +20,7 @@ const FeaturesList = props => {
   return (
     <Vertical className="col-sm-4 mt-5">
       <SmallHeading text={feature_title[0].text.toUpperCase()} />
-      <div className="Spacer-20">
+      <div className="Space-even">
         <DescriptiveParagraph
           text={feature_description[0].text}
           className="mt-3 mb-3 Light-text-grey"

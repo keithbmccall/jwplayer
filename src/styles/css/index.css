@@ -22,7 +22,7 @@ body {
   color: #465371; }
 
 .Spacer-20 {
-  height: 20%; }
+  height: 5em; }
 
 .Title-heading {
   font-size: 2.1em;
@@ -55,6 +55,10 @@ body {
 .Header-icon {
   height: 1.8em;
   margin: 0 1%; }
+
+.Hero-container {
+  overflow: hidden;
+  margin-bottom: -1.1%; }
 
 #Features-container {
   background: #465371;

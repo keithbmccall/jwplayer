@@ -16,7 +16,7 @@ const Landing = props => {
         </div>
       </div>
       <div className="row">
-        <div className="d-flex flex-grow-1 align-items-end justify-content-center col-md-12 align-self-center">
+        <div className="d-flex flex-grow-1 align-items-end justify-content-center align-self-center Hero-container">
           <HeroImage heroImage={heroImage} />
         </div>
       </div>

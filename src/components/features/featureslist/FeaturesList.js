@@ -9,7 +9,6 @@ const FeaturesList = props => {
   const renderList = (item, key) => (
     <DescriptiveList key={key} text={item.text} />
   );
-  console.log(props.features);
   const {
     feature_description,
     feature_title,
@@ -19,7 +18,7 @@ const FeaturesList = props => {
   } = props.features;
   const descriptiveList = list.map(renderList);
   return (
-    <Vertical className="col-md-4">
+    <Vertical className="col-sm-4 mt-5">
       <SmallHeading text={feature_title[0].text.toUpperCase()} />
       <div className="Spacer-20">
         <DescriptiveParagraph

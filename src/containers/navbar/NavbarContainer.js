@@ -6,6 +6,7 @@ export default class NavbarContainer extends Component {
     super();
     this.state = {
       collapseNav: false,
+      background: 0,
       content: {
         navLeft: {
           type: "big",
@@ -23,9 +24,16 @@ export default class NavbarContainer extends Component {
       collapseNav: window.innerWidth < 780
     });
   };
+  backgroundOnScroll = () => {
+    this.setState({
+      background: window.scrollY
+    });
+  };
   componentDidMount() {
     this.windowResize();
+    this.backgroundOnScroll();
     window.addEventListener("resize", this.windowResize);
+    window.addEventListener("scroll", this.backgroundOnScroll);
   }
   render() {
     return (
@@ -33,6 +41,7 @@ export default class NavbarContainer extends Component {
         collapseNav={this.state.collapseNav}
         navLeft={this.state.content.navLeft}
         navRight={this.state.content.navRight}
+        background={this.state.background}
       />
     );
   }

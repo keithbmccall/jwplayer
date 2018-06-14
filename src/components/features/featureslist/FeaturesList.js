@@ -19,7 +19,10 @@ const FeaturesList = props => {
   const descriptiveList = list.map(renderList);
   return (
     <Vertical className="col-sm-4 mt-5">
-      <SmallHeading text={feature_title[0].text.toUpperCase()} />
+      <SmallHeading
+        text={feature_title[0].text.toUpperCase()}
+        className="mt-5 mb-5"
+      />
       <div className="Space-even">
         <DescriptiveParagraph
           text={feature_description[0].text}

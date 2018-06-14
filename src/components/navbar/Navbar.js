@@ -4,13 +4,11 @@ import Button from "../tools/buttons/Button";
 import Horizontal from "../tools/holders/Horizontal";
 //
 const Navbar = props => {
-  const { navLeft, navRight, logo } = props;
+  const { navLeft, navRight, background } = props;
   const navBar = !props.collapseNav ? (
     <Fragment>
       <div className="d-flex align-items-center cursor nav-link">
-        <a href="https://www.jwplayer.com/">
-          JWPLAYER
-        </a>
+        <a href="https://www.jwplayer.com/">JWPLAYER</a>
         <Horizontal className="ml-3 mt-2">
           <NavbarItems content={navLeft} />
         </Horizontal>
@@ -30,9 +28,7 @@ const Navbar = props => {
   ) : (
     <Fragment>
       <div className="d-flex align-items-center cursor nav-link">
-        <a href="https://www.jwplayer.com/">
-        JWPLAYER
-        </a>
+        <a href="https://www.jwplayer.com/">JWPLAYER</a>
       </div>
       <nav className="nav navbar-dark col-sm align-items-center justify-content-end">
         <Button
@@ -69,7 +65,11 @@ const Navbar = props => {
     </Fragment>
   );
   return (
-    <div className="d-flex fixed-top" id="Navbar-container">
+    <div
+      className="d-flex fixed-top"
+      id="Navbar-container"
+      style={{ background: `rgba(0, 0, 0, ${background / 80})` }}
+    >
       {navBar}
     </div>
   );

@@ -9,7 +9,7 @@ const GraphAdjacentParagraph = props => {
   const orderLogic = index % 2 !== 0 ? "order-lg-1" : "";
   return (
     <Horizontal className={className}>
-      <div className={orderLogic + " col-12 col-lg-4"}>
+      <div className={orderLogic + " d-flex justify-content-center col-12 col-lg-4"}>
         <img
           src={image}
           alt={heading}

@@ -27,11 +27,15 @@ body {
 }
 .Space-even {
   height: 5em;
+  width: 14em;
 }
 .nav,
+.nav-link,
 a {
   &:link,
-  :visited {
+  :visited,
+  :hover {
+    text-decoration: none;
     color: white;
   }
 }

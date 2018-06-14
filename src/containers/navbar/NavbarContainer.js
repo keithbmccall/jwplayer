@@ -1,16 +1,26 @@
 import React, { Component } from "react";
 import Navbar from "../../components/navbar/Navbar";
-
+//
 export default class NavbarContainer extends Component {
   constructor() {
     super();
     this.state = {
-      collapseNav: false
+      collapseNav: false,
+      content: {
+        navLeft: {
+          type: "big",
+          text: ["Solutions", "Customers", "Pricing"]
+        },
+        navRight: {
+          type: "small",
+          text: ["Company", "Careers", "Developers", "Support", "Sign-in"]
+        }
+      }
     };
   }
   windowResize = () => {
     this.setState({
-      collapseNav: window.innerWidth < 760
+      collapseNav: window.innerWidth < 780
     });
   };
   componentDidMount() {
@@ -18,7 +28,12 @@ export default class NavbarContainer extends Component {
     window.addEventListener("resize", this.windowResize);
   }
   render() {
-    console.log(this.state.collapseNav);
-    return <Navbar collapseNav={this.state.collapseNav} />;
+    return (
+      <Navbar
+        collapseNav={this.state.collapseNav}
+        navLeft={this.state.content.navLeft}
+        navRight={this.state.content.navRight}
+      />
+    );
   }
 }

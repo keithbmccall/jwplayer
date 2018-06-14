@@ -1,47 +1,71 @@
 import React, { Fragment } from "react";
+import NavbarItems from "./NavbarItems";
 import Button from "../tools/buttons/Button";
-
+import Horizontal from "../tools/holders/Horizontal";
+//
 const Navbar = props => {
+  const { navLeft, navRight, logo } = props;
   const navBar = !props.collapseNav ? (
     <Fragment>
       <div className="d-flex align-items-center cursor nav-link">
-        <a href="https://www.jwplayer.com/" >
+        <a href="https://www.jwplayer.com/">
           JWPLAYER
         </a>
-        left
+        <Horizontal className="ml-3 mt-2">
+          <NavbarItems content={navLeft} />
+        </Horizontal>
       </div>
       <nav className="nav col-sm align-items-center justify-content-end">
-        rights
+        <Horizontal className="mr-3 mt-3">
+          <NavbarItems content={navRight} />
+        </Horizontal>
+
+        <Button
+          text="GET STARTED"
+          url="https://www.jwplayer.com/"
+          className="Red-bg"
+        />
       </nav>
     </Fragment>
   ) : (
     <Fragment>
       <div className="d-flex align-items-center cursor nav-link">
-        <a href="https://www.jwplayer.com/" >
-          JWPLAYER
+        <a href="https://www.jwplayer.com/">
+        JWPLAYER
         </a>
-        left
       </div>
-      <div className="nav col-sm align-items-center justify-content-end">
+      <nav className="nav navbar-dark col-sm align-items-center justify-content-end">
+        <Button
+          text="GET STARTED"
+          url="https://www.jwplayer.com/"
+          className="Red-bg"
+        />
         <div
-          className="dropdown-toggle nav-link"
+          className="dropdown nav-link"
           id="dropdownMenuButton"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
         >
-         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
 
           <div
             className="dropdown-menu border-0"
             aria-labelledby="dropdownMenuButton"
           >
-            dadasdjaks
+            <NavbarItems content={navLeft} />
+            <NavbarItems content={navRight} />
           </div>
         </div>
-      </div>
+      </nav>
     </Fragment>
   );
   return (

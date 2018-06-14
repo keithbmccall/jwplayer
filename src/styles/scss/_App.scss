@@ -9,7 +9,8 @@ body {
   a {
     text-decoration: none;
     color: inherit;
-    &:visited {
+    &:link,
+    :visited {
       color: inherit;
     }
   }
@@ -26,4 +27,11 @@ body {
 }
 .Space-even {
   height: 5em;
+}
+.nav,
+a {
+  &:link,
+  :visited {
+    color: white;
+  }
 }

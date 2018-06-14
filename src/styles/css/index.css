@@ -9,7 +9,8 @@ body {
   .Button a {
     text-decoration: none;
     color: inherit; }
-    .Button a:visited {
+    .Button a:link,
+    .Button a :visited {
       color: inherit; }
 
 .Red-bg {
@@ -23,6 +24,12 @@ body {
 
 .Space-even {
   height: 5em; }
+
+.nav:link,
+.nav :visited,
+a:link,
+a :visited {
+  color: white; }
 
 .Title-heading {
   font-size: 2.1em;
